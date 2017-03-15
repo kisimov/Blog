@@ -18,6 +18,9 @@
 			    <ul class = "nav navbar-nav navbar-right">
 			    	<% if user_signed_in? %>
 				    	<li>
+				    		<%= link_to "Edit user", edit_user_registration_path %>
+				    	</li>	
+				    	<li>
 				    		<%= link_to "Log off", destroy_user_session_path, method: :delete %>
 				    	</li>
 				    <% else %>
